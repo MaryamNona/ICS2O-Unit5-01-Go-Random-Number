@@ -7,14 +7,14 @@ package main
 
 import (
 	"fmt"
-  "math/rand"
+	"math/rand"
 	"time"
 )
-
+	
 func main() {
 	var randomNumber int
 	var userGuess int
-  
+
   rand.Seed(time.Now().UnixNano())
   min := 1
 	max := 6
@@ -36,8 +36,8 @@ func main() {
 		  fmt.Println("Number too high.")
 		}
 		if randomNumber == userGuess {
-		  fmt.Println("Correct number!")
+			fmt.Println("Correct number!")
 		}
-    fmt.Println()
-  }
+		fmt.Println()
+	}
 }
