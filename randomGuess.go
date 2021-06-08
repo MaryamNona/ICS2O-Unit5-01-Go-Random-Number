@@ -6,7 +6,7 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
   "math/rand"
 	"time"
 )
@@ -40,5 +40,4 @@ func main() {
 		}
     fmt.Println()
   }
-
 }
