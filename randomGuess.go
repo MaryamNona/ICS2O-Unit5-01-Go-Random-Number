@@ -14,26 +14,31 @@ import (
 func main() {
 	var randomNumber int
 	var userGuess int
-
-	// input
-	fmt.Println("This program chooses a random number ")
-	fmt.Println()
-	fmt.Print("Enter number: ")
-	fmt.Scanln(&randomNumber)
-
-	// output
-		fmt.Println()
-		if randomNumber > userGuess {
-    fmt.Println("Number too high.")
-}
-if randomNumber < userGuess {
-	fmt.Println("Number too low.")
-}
-if randomNumber == userGuess {
-	fmt.Println("Correct number!")
-}
-rand.Seed(time.Now().UnixNano())
+  
+  rand.Seed(time.Now().UnixNano())
   min := 1
 	max := 6
-fmt.Println(rand.Intn((max - min + 1) + min))
+  randomNumber = rand.Intn((max - min + 1) + min)
+  userGuess = -1
+
+  fmt.Println("This program chooses a random number ")
+  fmt.Println()
+	// input
+  for userGuess != randomNumber {
+    fmt.Print("Enter number: ")
+    fmt.Scanln(&userGuess)
+
+	  // output
+		if randomNumber > userGuess {
+      fmt.Println("Number too low.")
+		}
+		if randomNumber < userGuess {
+		  fmt.Println("Number too high.")
+		}
+		if randomNumber == userGuess {
+		  fmt.Println("Correct number!")
+		}
+    fmt.Println()
+  }
+
 }
