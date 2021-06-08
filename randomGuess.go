@@ -15,14 +15,14 @@ func main () {
 	var randomNumber int
 	var userGuess int
 
-rand.seed(time.Now().UnixNano ())
+rand.seed(time.Now().UnixNano() )
 	min := 1
 	max := 6
 	randomNumber = rand.Intn((max - min + 1) + min)
 	userGuess = -1
 
 	fmt.Println("This program chooses a random number between 1-6 ")
-	fmt.println()
+	fmt.Println()
 	// input
 	for userGuess != randomNumber {
 		fmt.Print("Enter number: ")
