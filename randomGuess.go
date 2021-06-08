@@ -35,7 +35,8 @@ rand.seed(time.Now().UnixNano ())
 		if randomNumber < userGuess {
 			fmt.Println("Number too high.")
 		}
-		if randomNumber == userGuess
-		fmt.Println("Correct number!")
+		if randomNumber == userGuess {
+		  fmt.Println("Correct number!")
+		}
 	}
 }
