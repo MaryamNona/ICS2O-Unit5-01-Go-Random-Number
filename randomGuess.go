@@ -11,7 +11,7 @@ import (
 	"time"
 )
 
-fun main () {
+func main () {
 	var randomNumber int
 	var userGuess int
 
