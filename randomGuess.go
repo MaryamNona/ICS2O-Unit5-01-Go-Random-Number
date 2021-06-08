@@ -10,7 +10,7 @@ import (
 	"math/rand"
 	"time"
 )
-	
+
 func main() {
 	var randomNumber int
 	var userGuess int
@@ -39,5 +39,5 @@ func main() {
 			fmt.Println("Correct number!")
 		}
 		fmt.Println()
-	}
+  }
 }
