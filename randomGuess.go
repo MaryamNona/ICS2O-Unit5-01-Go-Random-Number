@@ -1,5 +1,5 @@
 // Created by: Maryam Nona
-// Created on: May 2021
+// Createdon: May 2021
 //
 // This program does basic math
 
@@ -11,33 +11,31 @@ import (
 	"time"
 )
 
-func main() {
+fun main () {
 	var randomNumber int
 	var userGuess int
 
-  rand.Seed(time.Now().UnixNano())
-  min := 1
+	rand.seed(time.Now().UnixNano ())
+	min := 1
 	max := 6
-  randomNumber = rand.Intn((max - min + 1) + min)
-  userGuess = -1
+	randomNumber = rand.Intn((max - min + 1) + min)
+	userGuess = -1
 
-  fmt.Println("This program chooses a random number ")
-  fmt.Println()
+	fmt.Println("This program chooses a random number between 1-6 ")
+	fmt.println()
 	// input
-  for userGuess != randomNumber {
-    fmt.Print("Enter number: ")
-    fmt.Scanln(&userGuess)
+	for userGuess != randomNumber {
+		fmt.Print("Enter number: ")
+		fmt.Scanln(&userGuess)
 
-	  // output
+		// output
 		if randomNumber > userGuess {
-      fmt.Println("Number too low.")
+			fmt.Println("Number too low.")
 		}
 		if randomNumber < userGuess {
-		  fmt.Println("Number too high.")
+			fmt.Println("Number too high.")
 		}
-		if randomNumber == userGuess {
-			fmt.Println("Correct number!")
-		}
-		fmt.Println()
-  }
+		if randomNumber == userGuess
+		fmt.Println("Correct number!")
+	}
 }
