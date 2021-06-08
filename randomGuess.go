@@ -15,7 +15,7 @@ func main () {
 	var randomNumber int
 	var userGuess int
 
-rand.seed(time.Now().UnixNano() )
+rand.Seed(time.Now().UnixNano() )
 	min := 1
 	max := 6
 	randomNumber = rand.Intn((max - min + 1) + min)
